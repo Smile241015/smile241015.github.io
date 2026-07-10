@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Official Merch</title>
+    <title>YouTubers Official Shop</title>
+    
+    <!-- ΑΥΤΟ ΑΛΛΑΖΕΙ ΤΟ ΕΙΚΟΝΙΔΙΟ ΠΑΝΩ-ΠΑΝΩ ΣΤΟ TAB -->
+    <link rel="icon" type="image/png" href="logo.png">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #0f0c1b; /* Σκούρο space background που ταιριάζει με το logo */
+            color: #fff;
         }
         header {
-            background-color: #111;
-            color: white;
+            background: linear-gradient(135deg, #1f1a3a, #0b0813);
             text-align: center;
             padding: 40px 20px;
+            border-bottom: 3px solid #ff0055;
+        }
+        header img {
+            max-width: 180px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff0055;
         }
         header h1 {
-            margin: 0;
+            margin: 15px 0 0 0;
             font-size: 2.5em;
             letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 10px #ff0055;
         }
         header p {
             margin: 10px 0 0 0;
-            color: #bbb;
+            color: #00ffcc;
+            font-weight: bold;
         }
         .container {
             max-width: 1200px;
@@ -35,96 +47,116 @@
         .products-grid {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             flex-wrap: wrap;
         }
         .product-card {
-            background: white;
-            border: 1px solid #eee;
-            border-radius: 8px;
+            background: #161224;
+            border: 2px solid #2e264f;
+            border-radius: 12px;
             text-align: center;
             padding: 20px;
             width: 280px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffcc;
         }
         .product-card img {
             max-width: 100%;
             height: auto;
-            border-radius: 4px;
+            border-radius: 8px;
         }
         .product-title {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin: 15px 0 5px 0;
             font-weight: bold;
+            color: #fff;
+        }
+        .product-description {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 10px;
         }
         .product-price {
-            color: #e67e22;
-            font-size: 1.3em;
+            color: #00ffcc;
+            font-size: 1.4em;
             font-weight: bold;
             margin-bottom: 15px;
         }
         .buy-btn {
             display: inline-block;
-            background-color: #111;
+            background: linear-gradient(90deg, #ff0055, #9900ff);
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 4px;
+            padding: 12px 25px;
+            border-radius: 25px;
             font-weight: bold;
-            transition: background 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 0, 85, 0.4);
+            transition: opacity 0.2s;
         }
         .buy-btn:hover {
-            background-color: #e67e22;
+            opacity: 0.9;
         }
         footer {
             text-align: center;
             padding: 30px;
-            background-color: #111;
+            background-color: #0b0813;
             color: #666;
             margin-top: 50px;
             font-size: 0.9em;
+            border-top: 1px solid #2e264f;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>BUBBLE OFFICIAL SHOP</h1>
-        <p>Το επίσημο merch του καναλιού</p>
+        <!-- Εδώ εμφανίζεται το στρογγυλό λογότυπό σου στην κορυφή -->
+        <img src="logo.png" alt="YouTubers Logo">
+        <h1>YOUTUBERS OFFICIAL SHOP</h1>
+        <p>Το επίσημο merch από Γκάμπι, Διονύση και Δημήτρη!</p>
     </header>
 
     <div class="container">
         <div class="products-grid">
             
-            <!-- ΠΡΟΪΟΝ 1 -->
+            <!-- ΠΡΟΪΟΝ 1: ΜΠΛΟΥΖΑ ΓΚΑΜΠΙ -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/350x400.png?text=Official+T-Shirt" alt="Merch T-Shirt">
-                <div class="product-title">Official T-Shirt</div>
-                <div class="product-price">24.99€</div>
-                <a href="#" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
+                <img src="https://via.placeholder.com/350x400.png?text=Gabi+T-Shirt" alt="Gabi T-Shirt">
+                <div class="product-title">Μπλούζα Γκάμπι</div>
+                <div class="product-description">Η αυθεντική συλλεκτική μπλούζα του Γκάμπι!</div>
+                <div class="product-price">22.99€</div>
+                <!-- ΕΔΩ βάζεις το link από το Fourthwall/Spring μέσα στα εισαγωγικά -->
+                <a href="ΒΑΛΕ_LINK_ΕΔΩ" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
             </div>
 
-            <!-- ΠΡΟΪΟΝ 2 -->
+            <!-- ΠΡΟΪΟΝ 2: ΦΟΥΤΕΡ ΔΙΟΝΥΣΗΣ -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/350x400.png?text=Official+Hoodie" alt="Merch Hoodie">
-                <div class="product-title">Official Hoodie</div>
-                <div class="product-price">44.99€</div>
-                <a href="#" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
+                <img src="https://via.placeholder.com/350x400.png?text=Dionysis+Hoodie" alt="Dionysis Hoodie">
+                <div class="product-title">Φούτερ Διονύσης</div>
+                <div class="product-description">Ζεστό hoodie με το headphone emoji του Διονύση!</div>
+                <div class="product-price">39.99€</div>
+                <a href="ΒΑΛΕ_LINK_ΕΔΩ" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
             </div>
 
-            <!-- ΠΡΟΪΟΝ 3 -->
+            <!-- ΠΡΟΪΟΝ 3: ΚΑΠΕΛΟ ΔΗΜΗΤΡΗΣ -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/350x400.png?text=Official+Cap" alt="Merch Cap">
-                <div class="product-title">Official Cap</div>
-                <div class="product-price">19.99€</div>
-                <a href="https://gaby-hdq-shop.fourthwall.com/products/s-d-c" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
+                <div class="product-card">
+                <img src="https://via.placeholder.com/350x400.png?text=Dimitris+Cap" alt="Dimitris Cap">
+                <div class="product-title">Καπέλο Δημήτρης</div>
+                <div class="product-description">Στυλάτο καπέλο snapback Δημήτρης!</div>
+                <div class="product-price">7.99€</div>
+                <a href="ΒΑΛΕ_LINK_ΕΔΩ" class="buy-btn">ΑΓΟΡΑ ΤΩΡΑ</a>
             </div>
 
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Bubble Shop. All rights reserved.</p>
+        <p>&copy; 2026 YouTubers Shop. All rights reserved.</p>
     </footer>
 
 </body>
